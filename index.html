@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fundo">
+        <div id="cal">
+            <p id="res"></p>
+            <table>
+                <tr>
+                    <td><button class="button" onclick="limpar()">C</button></td>
+                    <td><button class="button" onclick="apagar_ultimo()"><</button></td>
+                    <td><button class="button">()</button></td>
+                    <td><button class="button" onclick="inserir('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="inserir('7')">7</button></td>
+                    <td><button class="button" onclick="inserir('8')">8</button></td>
+                    <td><button class="button" onclick="inserir('9')">9</button></td>
+                    <td><button class="button" onclick="inserir('*')">x</button></td>
+                </tr>
+                
+                <tr>
+                    <td><button class="button" onclick="inserir('4')">4</button></td>
+                    <td><button class="button" onclick="inserir('5')">5</button></td>
+                    <td><button class="button" onclick="inserir('6')">6</button></td>
+                    <td><button class="button" onclick="inserir('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" onclick="inserir('1')">1</button></td>
+                    <td><button class="button" onclick="inserir('2')">2</button></td>
+                    <td><button class="button" onclick="inserir('3')">3</button></td>
+                    <td><button class="button" onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button" style="width: 121px;"
+                        onclick="inserir('0')">0</button></td>
+                    <td><button class="button" onclick="inserir('.')">.</button></td>
+                    <td><button class="button" onclick="calcular()">=</button></td>
+                    
+                </tr>
+              
+            </table>
+            <p id="autor">&copy;Vinicius Miguel</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
