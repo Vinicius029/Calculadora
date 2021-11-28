@@ -4,19 +4,27 @@
    
 }
 body{
+    height: 100vh;
     background-image: url(https://images.daznservices.com/di/library/GOAL/7b/63/torcida-corinthians-palmeiras-brasileirao-serie-a-13052018_1lz3nq6sryemu17b1yaebd7gdu.jpg?t=1601210147&quality=100);
+    background-position: center center;
+    background-size: cover;
     font: normal 15pt arial;
-    height: 100%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+   
 
 }
 
 #fundo{
-    
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -60%);
+    display: flex;
+    justify-content: center;
+    width: 435px;
+    margin: 2px;
+
 }
 
 #cal{
@@ -53,6 +61,7 @@ body{
 }
 
 #autor{
+    text-align: center;
     color: white;
     margin-top: 5px;
 }
